@@ -1,0 +1,9 @@
+version: "3"
+services:
+  file-browser:
+    image: mohamnag/nginx-file-browser
+    volumes:
+        - /webdav:/opt/www/files/
+    ports:
+        - "80:80"
+    restart: always
